@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><% include partials/page/head.ejs %></head>
+<body class="<%= classname %>">
+    <% include partials/page/header.ejs %>
+    <div class="container">
+        <h1><%= pageTitle %> <%= title %></h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam justo, bibendum at condimentum vitae, fringilla quis massa. Nullam nec dui vitae purus iaculis sagittis. Mauris viverra commodo orci quis tincidunt. Nullam tempor massa quis eros mattis, quis sagittis turpis efficitur. Proin scelerisque pretium mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacus ipsum. Duis sem tellus, gravida at finibus at, malesuada vitae lacus. Cras maximus magna quis leo facilisis porttitor. Cras lectus odio, efficitur quis erat eu, varius gravida ipsum. In lacus ex, vulputate sodales ultrices sit amet, euismod at orci. Sed iaculis pellentesque elit, eu mattis felis mattis sit amet.
+        </p>
+        <% if (typeof(users) !== 'undefined') { %>
+            <ul>
+                <% for(var i=0; i < users.length; i++) { %>
+                    <li><%= users[i] %></li>
+                <% } %>
+            </ul>
+        <% } %>
+    </div><!-- container -->
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefaults.ejs %>
+</body>
+</html>

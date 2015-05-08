@@ -1,0 +1,14 @@
+{
+  "name": "SampleApp",
+  "version": "1.0.0",
+  "description": "Some descrioption of the app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitaly Vyrodov",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.3"
+  }
+}
